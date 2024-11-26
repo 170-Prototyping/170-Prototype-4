@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\CMPM170\\170-Prototype-4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|c:\\projects\\cmpm170\\170-prototype-4\\assets\\scripts\\instantiateai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\instantiateai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|C:\\Projects\\CMPM170\\170-Prototype-4\\assets\\scripts\\ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InstantiateAI.cs",
+              "DocumentMoniker": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\InstantiateAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InstantiateAI.cs",
+              "ToolTip": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\InstantiateAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InstantiateAI.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwB0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T21:54:56.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AI.cs",
+              "DocumentMoniker": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\AI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AI.cs",
+              "ToolTip": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\AI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T21:48:48.085Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
