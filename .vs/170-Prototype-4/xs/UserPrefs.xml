@@ -1,27 +1,26 @@
-﻿<Properties StartupConfiguration="{4CF093F7-EE84-789B-6804-1C9270621A23}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+﻿<Properties StartupConfiguration="{4CF093F7-EE84-789B-6804-1C9270621A23}|" DisableMonoRequiredInfoBar="True">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="44cde5d5-7330-4948-a2cf-71440cc9e69e" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/trashManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="57" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" />
+      <File FileName="Assets/trashManager.cs" Line="42" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="170-Prototype-4" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="281e7e34-2424-4ddf-87e1-8ee259495fa0" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
