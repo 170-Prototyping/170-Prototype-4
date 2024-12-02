@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &22320670 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400018, guid: fedbd75f24167ac4390debcecd50ccbe, type: 3}
+  m_PrefabInstance: {fileID: 858921422}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &23516276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6544,7 +6549,7 @@ MonoBehaviour:
   rotationSpeed: 720
   trashCount: 0
   maxTrash: 5
-  trashCan: {fileID: 0}
+  trashCan: {fileID: 22320670}
 --- !u!1001 &1611823274
 PrefabInstance:
   m_ObjectHideFlags: 0

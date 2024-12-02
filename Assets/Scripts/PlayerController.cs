@@ -58,8 +58,9 @@ public class PlayerController : MonoBehaviour
 
     void PickUpTrash(GameObject trash)
     {
-        trashCount++; // Increment the count of trash
-        Destroy(trash); // Remove the trash object from the scene
+        trashManager.instance.pickTrash();
+        trashCount++; 
+        Destroy(trash); 
         Debug.Log("Picked up trash. Current count: " + trashCount);
     }
 
@@ -70,6 +71,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Deposited " + trashCount + " pieces of trash!");
             trashCount = 0; // Reset the count after depositing
+            trashManager.instance.depositTrash();
         }
         else if (trashCount == 0)
         {
