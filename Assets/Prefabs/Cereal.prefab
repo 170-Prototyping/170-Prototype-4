@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cereal
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8cdf52bef3c7c874498d5def25a35bbf, type: 3}
+      propertyPath: m_TagString
+      value: Trash
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8cdf52bef3c7c874498d5def25a35bbf, type: 3}
       propertyPath: m_LocalScale.x
       value: 3

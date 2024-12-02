@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 695cb951c9e5b2e4ebc1baccb673fbb2, type: 3}
+      propertyPath: m_TagString
+      value: Trash
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 695cb951c9e5b2e4ebc1baccb673fbb2, type: 3}
       propertyPath: m_LocalScale.x
       value: 3

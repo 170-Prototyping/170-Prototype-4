@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Referenced https://docs.unity3d.com/ScriptReference/CharacterController.Move.html for simple character controller.
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
@@ -12,25 +11,25 @@ public class PlayerController : MonoBehaviour
     private bool groundedPlayer;
     private float gravityValue = -9.81f;
 
-    // Start is called before the first frame update
+    public int trashCount = 0; // Current amount of trash the player is carrying
+    public int maxTrash = 5; // Maximum pieces of trash the player can carry
+    public Transform trashCan; // Reference to the trash can object for depositing
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Gravity
+        // Movement and gravity (existing logic)
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
             playerVelocity.y = 0f;
         }
 
-        // Move
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        // Normalize diagonal movement speed
         if (move.magnitude > 0)
         {
             move.Normalize();
@@ -38,9 +37,47 @@ public class PlayerController : MonoBehaviour
         }
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-
-        // Gravity
         playerVelocity.y += gravityValue * Time.deltaTime * 4.0f;
         controller.Move(playerVelocity * Time.deltaTime * 4.0f);
+
+        // Trash depositing logic
+        if (Input.GetKeyDown(KeyCode.E)) // Press 'E' to deposit trash
+        {
+            DepositTrash();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // Check if colliding with trash objects
+        if (other.CompareTag("Trash") && trashCount < maxTrash)
+        {
+            PickUpTrash(other.gameObject);
+        }
+    }
+
+    void PickUpTrash(GameObject trash)
+    {
+        trashCount++; // Increment the count of trash
+        Destroy(trash); // Remove the trash object from the scene
+        Debug.Log("Picked up trash. Current count: " + trashCount);
+    }
+
+    void DepositTrash()
+    {
+        // Check if near the trash can
+        if (Vector3.Distance(transform.position, trashCan.position) < 2f && trashCount > 0)
+        {
+            Debug.Log("Deposited " + trashCount + " pieces of trash!");
+            trashCount = 0; // Reset the count after depositing
+        }
+        else if (trashCount == 0)
+        {
+            Debug.Log("No trash to deposit.");
+        }
+        else
+        {
+            Debug.Log("Move closer to the trash can to deposit.");
+        }
     }
 }
