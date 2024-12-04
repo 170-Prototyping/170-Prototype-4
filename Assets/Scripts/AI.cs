@@ -6,21 +6,37 @@ using UnityEngine;
 public class AI : MonoBehaviour
 {
     // Start is called before the first frame update
-    private string dir = "";
+    public string dir = "";
     public float speed = 8.0f;
     [SerializeField] private GameObject[] trashList;
     private float spawnTimer = 5.0f;
     void Start()
     {
-        
         float pos_x = gameObject.transform.position.x;
         float pos_z = gameObject.transform.position.z;
-        if(pos_x < -50) dir = "right";
+        if (pos_x < -50) dir = "right";
         else if (pos_x > 50) dir = "left";
         else if (pos_z < -50) dir = "up";
         else if (pos_z > 50) dir = "down";
-    }
 
+
+                if (dir == "right")
+                {
+                    transform.Rotate(0, 90, 0);
+                }
+                else if (dir == "left")
+                {
+                    transform.Rotate(0, -90, 0);
+                }
+                else if (dir == "up")
+                {
+                    transform.Rotate(0, 0, 0);
+                }
+                else if (dir == "down")
+                {
+                    transform.Rotate(0, 180, 0);
+                }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -32,19 +48,19 @@ public class AI : MonoBehaviour
         //move the AI in the direction it was instantiated
         if (dir == "right")
         {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+            transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
         }
         else if (dir == "left")
         {
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
+            transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
         }
         else if (dir == "up")
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            transform.Translate(Vector3.forward * speed * Time.deltaTime, Space.World);
         }
         else if (dir == "down")
         {
-            transform.Translate(Vector3.back * speed * Time.deltaTime);
+            transform.Translate(Vector3.back * speed * Time.deltaTime, Space.World);
         }
 
 

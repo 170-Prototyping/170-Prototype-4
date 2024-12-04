@@ -4,7 +4,7 @@ using UnityEngine;
 public class InstantiateAI : MonoBehaviour
 {
     public GameObject[] aiCharacterPrefabs;
-    public float spawnInterval = 1.0f;
+    public float spawnInterval = .5f;
     public Vector3 spawnMinBounds = new Vector3(-80, 2, -80);
     public Vector3 spawnMaxBounds = new Vector3(80, 2, 80);
     public Vector2 exclusionBoundsX = new Vector2(-50, 50); // Excluded X range

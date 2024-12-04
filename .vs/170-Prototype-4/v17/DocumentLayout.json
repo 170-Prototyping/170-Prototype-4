@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Projects\\CMPM170\\170-Prototype-4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|c:\\projects\\cmpm170\\170-prototype-4\\assets\\scripts\\playercontrollernew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|c:\\projects\\cmpm170\\170-prototype-4\\assets\\scripts\\ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|C:\\Projects\\CMPM170\\170-Prototype-4\\assets\\scripts\\playercontrollernew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrollernew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|C:\\Projects\\CMPM170\\170-Prototype-4\\assets\\scripts\\instantiateai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\instantiateai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|C:\\Projects\\CMPM170\\170-Prototype-4\\assets\\scripts\\ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CF093F7-EE84-789B-6804-1C9270621A23}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAkwA8AAABSAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAIBAwA8AAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:43:34.648Z"
+              "WhenOpened": "2024-12-04T19:43:34.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerControllerNew.cs",
               "DocumentMoniker": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\PlayerControllerNew.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControllerNew.cs",
               "ToolTip": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\PlayerControllerNew.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerControllerNew.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAG8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAwwFoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T19:22:30.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "InstantiateAI.cs",
               "DocumentMoniker": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\InstantiateAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InstantiateAI.cs",
               "ToolTip": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\InstantiateAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\InstantiateAI.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA0wA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T21:54:56.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AI.cs",
               "DocumentMoniker": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\AI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AI.cs",
               "ToolTip": "C:\\Projects\\CMPM170\\170-Prototype-4\\Assets\\Scripts\\AI.cs",
               "RelativeToolTip": "Assets\\Scripts\\AI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwD4AAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T21:48:48.085Z"
+              "WhenOpened": "2024-11-26T21:48:48.085Z",
+              "EditorCaption": ""
             }
           ]
         }
