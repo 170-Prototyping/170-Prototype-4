@@ -22,22 +22,22 @@ public class trashManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        heldText.text = held.ToString();
-        depoText.text = depo.ToString();
+        heldText.text = "Held: " + held.ToString() + "/5";
+        depoText.text = "Deposited: " + depo.ToString();
     }
 
     public void depositTrash()
     {
         depo += held;
         held = 0;
-        heldText.text = held.ToString();
-        depoText.text = depo.ToString();
+        heldText.text = "Held: " + held.ToString() + "/5"; //idk how to reference maxTrash so 5 is there temp
+        depoText.text = "Deposited: " + depo.ToString();
     }
 
     public void pickTrash()
     {
         held += 1;
-        heldText.text = held.ToString();
+        heldText.text = "Held: " + held.ToString() + "/5";
     }
 
 }
