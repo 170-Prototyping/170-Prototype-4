@@ -110,7 +110,7 @@ public class PlayerControllerNew : MonoBehaviour
     void DepositTrash()
     {
         // Check if near the trash can
-        if (Vector3.Distance(transform.position, trashCan.position) < 2f && trashCount > 0)
+        if (Vector3.Distance(transform.position, trashCan.position) < 5f && trashCount > 0)
         {
             Debug.Log("Deposited " + trashCount + " pieces of trash!");
             trashCount = 0; // Reset the count after depositing
