@@ -16,7 +16,8 @@ public class PlayerControllerNew : MonoBehaviour
     public int maxTrash = 5; // Maximum pieces of trash the player can carry
     public Transform trashCan; // Reference to the trash can object for depositing
     public Transform trashCan2;
-
+    public popup PopUp;
+    
 
     private void cameraInput()
     {
@@ -62,6 +63,7 @@ public class PlayerControllerNew : MonoBehaviour
     }
 
     // Start is called before the first frame update
+    [System.Obsolete]
     void Start()
     {
         body = GetComponent<Rigidbody>();//grabbing reference to the rigidbody
@@ -69,6 +71,12 @@ public class PlayerControllerNew : MonoBehaviour
         if (cameraTransform == null)
         {
             cameraTransform = Camera.main.transform;
+        }
+
+        PopUp = FindObjectOfType<popup>();
+        if (PopUp == null)
+        {
+            Debug.LogError("PopUp script not found in the scene!");
         }
     }
 
@@ -88,6 +96,21 @@ public class PlayerControllerNew : MonoBehaviour
         if (other.CompareTag("Trash") && trashCount < maxTrash)
         {
             PickUpTrash(other.gameObject);
+        }
+
+        Debug.Log($"Triggered with: {other.name}");
+        if (other.CompareTag("TrashCan"))
+        {
+            Debug.Log("Player entered TrashCan zone.");
+            if (PopUp != null)
+            {
+                Debug.Log("PopUp instance found.");
+                PopUp.ShowPopup("Press 'E' to deposit");
+            }
+            else
+            {
+                Debug.LogError("PopUp is null!");
+            }
         }
     }
 
