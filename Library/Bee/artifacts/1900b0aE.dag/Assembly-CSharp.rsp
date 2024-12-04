@@ -394,6 +394,7 @@
 "Assets/Scripts/InstantiateAI.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerControllerNew.cs"
+"Assets/Scripts/popup.cs"
 "Assets/Scripts/trashManager.cs"
 -langversion:9.0
 
