@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public int trashCount = 0; // Current amount of trash the player is carrying
     public int maxTrash = 5; // Maximum pieces of trash the player can carry
     public Transform trashCan; // Reference to the trash can object for depositing
+    public Transform trashCan2; // Reference to the trash can object for depositing
+
 
     void Start()
     {
@@ -68,6 +70,12 @@ public class PlayerController : MonoBehaviour
     {
         // Check if near the trash can
         if (Vector3.Distance(transform.position, trashCan.position) < 2f && trashCount > 0)
+        {
+            Debug.Log("Deposited " + trashCount + " pieces of trash!");
+            trashCount = 0; // Reset the count after depositing
+            trashManager.instance.depositTrash();
+        }
+        if (Vector3.Distance(transform.position, trashCan2.position) < 2f && trashCount > 0)
         {
             Debug.Log("Deposited " + trashCount + " pieces of trash!");
             trashCount = 0; // Reset the count after depositing
