@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class InstantiateAI : MonoBehaviour
 {
-    public GameObject aiCharacterPrefab;
+    public GameObject[] aiCharacterPrefabs;
     public float spawnInterval = 1.0f;
     public Vector3 spawnMinBounds = new Vector3(-80, 2, -80);
     public Vector3 spawnMaxBounds = new Vector3(80, 2, 80);
@@ -17,6 +17,8 @@ public class InstantiateAI : MonoBehaviour
 
     private void SpawnAICharacter()
     {
+        //randomize the AI character prefab
+        GameObject aiCharacterPrefab = aiCharacterPrefabs[Random.Range(0, aiCharacterPrefabs.Length)];
         if (aiCharacterPrefab == null)
         {
             Debug.LogError("AICharacter prefab is not assigned.");
