@@ -25,7 +25,7 @@ public class trashManager : MonoBehaviour
     void Start()
     {
         heldText.text = "Held: " + held.ToString() + "/5";
-        depoText.text = "Deposited: " + depo.ToString() + "/30";
+        depoText.text = "Deposited: " + depo.ToString() + "/20";
         GameOver.SetActive(false);
     }
 
